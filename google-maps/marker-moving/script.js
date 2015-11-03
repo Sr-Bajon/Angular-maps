@@ -17,7 +17,7 @@ angular.module('appMaps', ['uiGmapgoogle-maps'])
         latitude : 40.1451,
         longitude: -99.6680
       },
-      options: {draggable: false}
+      options: {draggable: true}
     };
     $scope.$watchCollection("marker.coords", function (newVal, oldVal) {
       if (_.isEqual(newVal, oldVal))
@@ -30,5 +30,5 @@ angular.module('appMaps', ['uiGmapgoogle-maps'])
         longitude: $scope.marker.coords.longitude -1
       };
       $scope.dynamicMoveCtr++;
-    }, 4000);
+    }, 1000);
   });
