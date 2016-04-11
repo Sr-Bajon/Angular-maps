@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="GMaps">
+<head>
+  <meta charset="UTF-8">
+  <title>GMAPSLearning</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body ng-controller="gmController">
+<button ng-click="add()">PUSH</button>
+<button ng-click="shift()">QUITAR</button>
+<button ng-click="animar()">ANIMAR</button>
+
+
+<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+  <!--<div ng-repeat="marker in markers">-->
+  <ui-gmap-marker ng-repeat="marker in markers" coords="marker.coords" options="marker.options"
+                  events="marker.events" idkey="marker.id">
+  </ui-gmap-marker>
+    <!--</div>-->
+
+</ui-gmap-google-map>
+
+
+<script src='node_modules/lodash/lodash.js'></script>
+<script src="node_modules/angular/angular.js"></script>
+<script
+    src='node_modules/angular-simple-logger/dist/angular-simple-logger.js'></script>
+<script
+    src="node_modules/angular-google-maps/dist/angular-google-maps.js"></script>
+<script src="quickStart.js"></script>
+</body>
+</html>

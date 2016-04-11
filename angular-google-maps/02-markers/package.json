@@ -1,0 +1,15 @@
+{
+  "name": "angular-google-maps-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quiclStart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-google-maps": "^2.3.2"
+  }
+}

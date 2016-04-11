@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" ng-app="GMaps">
+<head>
+  <meta charset="UTF-8">
+  <title>GMAPSLearning</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body ng-controller="gmController">
+<p>Ese mapa tiene bonanza</p>
+<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
+
+<script src='node_modules/lodash/lodash.js'></script>
+<script src="node_modules/angular/angular.js"></script>
+<script
+    src='node_modules/angular-simple-logger/dist/angular-simple-logger.js'></script>
+<script
+    src="node_modules/angular-google-maps/dist/angular-google-maps.js"></script>
+<script src="quickStart.js"></script>
+</body>
+</html>
